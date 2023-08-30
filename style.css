@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;
+    color: black
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+button {
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-family: 'Fira Sans', sans-serif;
+    border: 0;
+    background: #888F93;
+    color: #F4F5F7; 
+    
+}
+
+header{
+    height: calc(100vh - 150px);
+    background: no-repeat center/cover url("assents/header-image.jpg");
+}
+
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 30px;
+}
+
+header nav p {
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li{
+    margin: 0 15px;
+    
+}
+
+.header-content {
+    max-width: 400px;
+    margin: 150px auto;
+    text-align: center;
+    
+}
+
+
+.header-content h1 {
+    margin-bottom: 10px;
+    font-size: 3rem;
+    color: black; /* Text color */
+    font-weight: bold;
+    letter-spacing: 1px; /* Adjust as needed */
+    text-shadow:
+      -1px -1px 0 #fff, /* Top-left shadow */
+       1px -1px 0 #fff, /* Top-right shadow */
+      -1px  1px 0 #fff, /* Bottom-left shadow */
+       1px  1px 0 #fff; /* Bottom-right shadow */
+
+}
+
+.header-content p {
+    font-size: 15px;
+    color: white; /* Text color */
+    font-weight: bold;
+    letter-spacing: 1px; /* Adjust as needed */
+    text-shadow:
+      -1px -1px 0 #000, /* Top-left shadow */
+       1px -1px 0 #000, /* Top-right shadow */
+      -1px  1px 0 #000, /* Bottom-left shadow */
+       1px  1px 0 #000; /* Bottom-right shadow */
+}
+
+.pacotes {
+   
+    background: #294340;
+    padding: 15px;
+    
+}
+
+.pacotes .pacotes-cards {
+    display: flex;
+    margin: auto;
+    max-width: 1300px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.pacotes .pacotes-titles {
+   width: 100%;
+   margin: 25px 0;
+   text-align: center;
+   font: bold;
+  
+}
+
+
+.pacotes .card {
+    width: 250px;
+    height: 350px;
+    background: #1564a3;
+    border-radius: 15px 15px 15px;
+    margin: 25px;
+    position: relative;
+        
+}
+
+.pacotes .image-card {
+    width: 250px;
+    height: 200px;
+    border-radius: 15px 15px 15px;
+    object-fit: cover;
+}
+
+.pacotes .card-content {
+    padding: 0px 15px;
+    color: white;
+}
+
+.pacotes .card-content ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0px;
+
+}
+
+
+.pacotes .card-content ul li {
+    font-size: .7rem;
+    display: flex;
+    align-items: center;
+    margin: 3px 0px;
+    font-weight: bold;
+    color: #c1c5c7;
+}
+
+.pacotes .card-content li svg {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.pacotes .card-content h1 {
+    font-size: 14px;
+    padding: 0px 5px;
+}
+
+.pacotes .card .card-tag-top {
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    background: black;
+    border-radius: 8px 0px 0px 8px;
+    padding: 5px 10px;
+}
+
+
+.pacotes .card .card-tag-botton {
+    position: absolute;
+    left: 0px;
+    top: 160px;
+    background: black;
+    color: white;
+    border-radius: 0px 8px 8px 0px;
+    padding: 5px 10px;
+}
+
+.pacotes .card .card-tag p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: white;
+    font-weight: bold;
+}
+
+.serviços{
+    padding: 15px;
+}
+
+.serviços .serviços-title {
+    text-align: center;
+    margin: 35px 0;
+    }
+
+.serviços .serviços-cards {
+    display: flex;
+    max-width: 950px;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.serviços .card {
+    padding-top: 25px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+
+}
+
+.serviços .card svg {
+    width: 60px;
+    height: 60px;
+    margin: 50px;
+    transition: all 1s;
+}
+
+.serviços .card svg:hover {
+    stroke: rgba(76, 87, 235, 0.664);
+    transform: scale(1.1);
+}
+
+.serviços .card h3 {
+    font-weight: bold;
+    }
+.serviços .card p {
+    color: rgb(0, 0, 0);
+    font-size: .8rem;
+    text-align: justify;
+}
+
+.serviços .card .card-content {
+    height: 180px;
+    text-align: center;
+    
+}
+
+.serviços button {
+    background: #174e7a;
+}
+
+@media (max-width: 950px) {
+   .contato {
+    padding: 60px 0 !important;
+   }
+   .contato .contato-card {
+    left: 40px;
+   }
+}
+
+@media (max-width: 800px) {
+    .contato {
+        padding: 20px 0 !important;
+    }
+
+    .contato .contato-card {
+        position: static !important;
+        margin: 40px 220px !important;
+    }
+ }
+
+@media (max-width: 767px) {
+   
+}
+
+@media (max-width: 480px) {
+    
+      
+    
+    body {
+        margin-bottom: 55px;
+    }
+    
+    
+    header nav ul {
+       position: fixed;
+       bottom: 0;
+       left: 0; 
+       width: 100%;
+       padding: 0;
+       margin: 0;
+
+       z-index: 99;
+       
+       background: #395155;
+       color: white;
+       font-weight: bold;
+       height: 50px;
+
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+    }
+
+    header nav p {
+        width: 100%;
+        text-align: center;
+    }
+   
+    .contato .contato-card {
+        position: static !important;
+        margin: 40px 20px !important;
+    }
+
+
+}
+
+
+ .contato {
+    padding: 60px;
+    background:#1564a3;
+    position: relative;
+ }
+ 
+  .contato .contato-card {
+    width: 350px;
+    height: 300px;
+    background: #ffffff;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 99;
+
+    top: calc(50% - 150px);
+    left: calc(20% - 175px);
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);    
+
+ } 
+
+
+.contato .contato-card li {
+    font-size: 1rem;
+    font-weight: bold;
+    color: gray;
+    align-items: center;
+    display: flex;
+    
+}
+
+.contato .contato-card li svg {
+    width: 16px;
+    margin: 10px;
+
+}
+
+ .contato .contato-card h1 {
+    font-size: 1.2rem;
+    font: bold;
+    text-align: center;
+ }
+
+  
+
